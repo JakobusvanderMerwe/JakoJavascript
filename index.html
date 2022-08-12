@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+            Jako Learning JavaScript
+        </title>
+        <script> src= "externalJavaScript.js"
+        </script>
+    </header>
+<body>
+
+<h2>Task 1 - Turn lightbulb on and off</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+
+<hr>
+<!--END1-->
+
+<h2>Task 2 - Change the style of an HTML element</h2>
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+<hr>
+<!--END2-->
+
+<h2>Task 3 - Hide HTML elements</h2>
+<p id="demo2">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+<hr>
+<!--END3-->
+
+<h2>Task 4 - Show hidden elements</h2>
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo3" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+
+<hr>
+<!--END4-->
+
+<h2>Task 5 - Write a function</h2>
+<p id="demo4">You can add your JavaScript in script tags</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo4").innerHTML = "Sentence changed.";
+}
+
+</script>
+
+<p>Function is a block of code, that can be executed when called for.</p>
+<hr>
+<!--END4-->
+
+<h2>Link an external .js page </h2>
+<p>Create a new file touch javascriptexample.js in terminal,then link your js page to html by adding it inbetween script </p>
+
+<code> script src="myScript.js" /script </code>
+<hr>
+<!--END4-->
+<h2>Javascript Display Possibilities</h2>
+
+<p>innerHTML  - writes into an HTML elements. <br>
+To access an HTML element use document.getElementById(id)
+<br><br>
+<code>
+    &lt;p id="example"&gt;&lt;/p&gt;
+<br>
+&lt;script&gt;
+document.getElementById("example").innerHTML = 5 + 6;
+&lt;/script&gt;
+    </code><br><br>
+    This returns 11 within html
+</p>
+<hr>
+
+    <h3>document.write()</h3>
+    <p>Writes directly into html without needing to link to an HTML element</p>
+    
+<code>
+    &lt;script&gt;document.write(5+7)&lt;/script&gt;
+</code>
+This will just show the result on the page. <br><br>
+
+<p>Link a button to this</p>
+<code>
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+</code>
+
+<strong>NOTE THAT THIS IS ONLY FOR TESTING! RESULTS IN CLEARING THE HTML PAGE.</strong>
+
+<br><br>
+<hr>
+<h3>window.alert()</h3>
+ <p>Gives you a popup alert</p>
+ <code>alert(5.6);</code>   
+
+<br><br>
+<hr>
+   <h3>console.log() </h3> 
+<p>Used for debugging</p>
+<code>console.log(5+6);</code>
+<br><br>
+<hr><hr>
+<h2>Variables</h2>
+<p>Variables ar containers for storing data: let - for if the variable an change vs const for when the variable will remain the same.</p>
+
+<code>const price1 = 5; <br>
+    const price2 = 6; <br>
+    let total = price1 + price2;</code>
+
+    <br><br>
+<code>// You can create a constant array: <br>
+    const cars = ["Saab", "Volvo", "BMW"]; <br><br>
+    
+    // You can change an element: <br>
+    cars[0] = "Toyota";<br><br>
+    
+    // You can add an element: <br>
+    cars.push("Audi");</code> <br><br>
+
+    <br>
+    You can also change properties within the const and add properties (car.owner) <br>
+<hr>
+<h2>Operators</h2>
+
+</body>
+</html>
