@@ -61,7 +61,13 @@ function myFunction() {
 
 </script>
 
-<p>Function is a block of code, that can be executed when called for.</p>
+<p>Function is a block of code, that can be executed when called for.</p> <br>
+
+REMEMBER to add () when writing a function! example: <br>
+<code>function myFunction() {
+alert("Hello, World!")
+}
+</code>
 <hr>
 <!--END4-->
 
@@ -72,8 +78,8 @@ function myFunction() {
 <hr>
 <!--END4-->
 <h2>Javascript Display Possibilities</h2>
-
-<p>innerHTML  - writes into an HTML elements. <br>
+<h3>innerHTML</h3>
+<p>Writes into an HTML elements. <br>
 To access an HTML element use document.getElementById(id)
 <br><br>
 <code>
@@ -86,7 +92,7 @@ document.getElementById("example").innerHTML = 5 + 6;
     This returns 11 within html
 </p>
 <hr>
-
+<!--BREAK.........................................................-->
     <h3>document.write()</h3>
     <p>Writes directly into html without needing to link to an HTML element</p>
     
@@ -104,6 +110,7 @@ This will just show the result on the page. <br><br>
 
 <br><br>
 <hr>
+<!--BREAK.........................................................-->
 <h3>window.alert()</h3>
  <p>Gives you a popup alert</p>
  <code>alert(5.6);</code>   
@@ -135,7 +142,73 @@ This will just show the result on the page. <br><br>
     <br>
     You can also change properties within the const and add properties (car.owner) <br>
 <hr>
+
+<!--BREAK.........................................................-->
+
+
 <h2>Operators</h2>
+
+<p>Add strings 
+    let text1 = "john"; <br>
+    let text2 = "doe"; <br>
+    let text 3 = text1 + " " + text2; <br>
+</p>
+
+
+<p>The same can be done for numbers. Google Aritgmetic for more detail.</p>
+<hr>
+<!--BREAK.........................................................-->
+
+
+<h2>Data Types</h2>
+<p>Variables can hold different data types:</p>
+<code>let length = 16;                               // Number <br>
+    let lastName = "Johnson";                      // String <br>
+    let x = {firstName:"John", lastName:"Doe"};    // Object</code> <br>
+
+<h3>Booleans - TRUE or FALSE</h3>
+<p>Can only be true or false, usually used in conditional testing.</p> <br>
+<code>let x = 5; <br>
+    let y = 5; <br>
+    let z = 6; <br>
+    (x == y)       // Returns true <br>
+    (x == z)       // Returns false</code>
+<br>
+
+<h3>Arrays</h3>
+<p>Written with square brackets and seperated by commas. (Think of arrays as "a bunch of")</p>
+
+<code>const cars = ["Saab", "Volvo", "BMW"];</code>
+
+<h3>Objects</h3>
+<p>Written with curly brackets {}. Object properties are written name:value pair, seperated by commas.</p>
+
+<code>const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code><br>
+<hr>
+<!--BREAK.........................................................-->
+
+
+<h2>Functions</h2>
+<p>Function is a block of code designed to perform a particular task. Its executed when it is called.</p>
+
+<code>
+    p id="test">/p <br>
+    function myFunction(p1, p2) { <br>
+    return p1 * p2;   <br>
+     // The function returns the product of p1 and p2
+  } <br><br>
+  document.getElementById("test").innerHTML = myFunction(7,8)<br>
+</code>
+
+<p>Example results in:</p>
+  <p id="test"></p>
+  <script>function myFunction(p1, p2) {
+    return p1 ** p2;}
+document.getElementById("test").innerHTML = myFunction(7,8)</script>
+  
+
+
+
 
 </body>
 </html>
