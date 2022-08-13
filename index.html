@@ -6,6 +6,11 @@
         </title>
         <script> src= "externalJavaScript.js"
         </script>
+        <style>
+            code {
+                background-color: bisque;
+            }
+        </style>
     </header>
 <body>
 
@@ -205,7 +210,35 @@ This will just show the result on the page. <br><br>
   <script>function myFunction(p1, p2) {
     return p1 ** p2;}
 document.getElementById("test").innerHTML = myFunction(7,8)</script>
-  
+  <hr>
+  <!--BREAK.........................................................-->
+<h2>Objects</h2>
+<p>Access an object:</p>
+<code>objectName.propertyName or <br>
+        objectName["propertyName"];
+</code>
+
+<p>Objects can have Methods - which are functions stored in properties as function defenitions.</p>
+
+<code>const person = { <br>
+    firstName: "John", <br>
+    lastName : "Doe", <br>
+    id       : 5566, <br>
+    fullName : function() { <br>
+      return this.firstName + " " + this.lastName; <br>
+    }
+  };</code>
+
+<p>In the example above, <strong>this</strong> refers to the person object.
+<br> this keyword refers to an object.
+</p>
+
+<p>To access object Methods use:</p>
+<code>objectName.methodname()</code>
+<p>Do not declare strings, numbers, and booleans as objects.</p>
+<hr>
+  <!--BREAK.........................................................-->
+<h2>JS Events</h2>
 
 
 
